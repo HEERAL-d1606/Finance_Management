@@ -1,0 +1,98 @@
+.parent-card {
+    /* width: 100%; Take full width of the viewport or parent container */
+    /* max-width: 1200px; Optional: Set a maximum width for better readability */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space between inner sections */
+    gap: 20px;
+    /* background-color: aqua; */
+  }
+  
+  .comparison-card,
+  .export-card {
+    flex: 1; /* Allow both cards to take equal width */
+    min-width: 300px; /* Set a minimum width to prevent collapsing on small screens */
+    max-width: 100%; /* Ensure it never overflows */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* text-align: center; */
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    flex-direction: column;
+    /* gap: 0px; */
+    /* background-color: #007BFF; */
+  }
+  
+  .checkbox-item {
+    display: flex;
+    justify-content: space-between; /* Space between label and checkbox */
+    width: 100%; /* Ensure the checkbox item takes the full width */
+    align-items: center;
+    padding: 8px 0;
+    /* background-color: #007BFF; */
+  }
+  
+  .checkbox-label {
+    font-size: 1rem;
+    flex-grow: 1;
+    text-align: left;
+    /* background-color: blueviolet; */
+    width: 600px;
+    margin-left: 80px;
+  }
+  
+  .checkbox-input {
+    margin-left: 8px;
+    /* background-color:rgb(155, 155, 6) ; */
+  }
+  
+  .compare-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full-width button */
+    margin-left: 60px;
+  }
+  
+  .compare-button:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    .flex {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 10px; /* Reduce gaps */
+    }
+
+    .compare-button {
+        margin-left: 0; /* Center-align on small screens */
+        width: 100%; /* Full width */
+    }
+}
+
+
+
+  

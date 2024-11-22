@@ -1,0 +1,55 @@
+/* Table Container Styling */
+.table-container {
+    /* max-width: 1200px; */
+    /* width: 100%; */
+    /* margin: 0 auto; */
+    width: 1200px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    /* background-color: #4CAF50; */
+  }
+  
+  .table-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Table Styling */
+  .financial-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    /* background-color: #4CAF50; */
+  }
+  
+  .financial-table th,
+  .financial-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .financial-table th {
+    /* background-color: #4CAF50; */
+    color: white;
+  }
+  
+  .financial-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .financial-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    .table-container {
+        overflow-x: auto; /* Enable horizontal scrolling */
+    }
+    .financial-table th, .financial-table td {
+        font-size: 0.875rem; /* Smaller text for better fit */
+        padding: 8px; /* Reduced padding */
+    }
+}

@@ -1,0 +1,108 @@
+/* Header Container */
+.header {
+    position: sticky;
+    top: 0;
+    background-color:  #2f54b4;  /* Soft navy blue for a professional look */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow for better visibility */
+    padding: 10px 20px;
+    border-radius: 4px;
+    /* width: 100%; Full-width to span across the viewport */
+    z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+/* Centered Header Content */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px; /* Maximum width for better readability */
+    margin: 0 auto; /* Centers the content */
+}
+
+/* Header Title Styling */
+.header-title {
+    font-size: 2rem; /* Larger font size for prominence */
+    font-weight: 700; /* Bold for emphasis */
+    margin: 0;
+    color: #f1f5f9; /* Light gray for contrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle text shadow for better readability */
+}
+
+/* Navigation Container */
+.header-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center; /* Centers the buttons vertically */
+}
+
+/* Navigation Button Styling */
+.nav-button {
+    background: none;
+    border: none;
+    color: #e2e8f0; /* Light gray */
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect for Navigation Buttons */
+.nav-button:hover {
+    background-color: #2a3d4f; /* Darker navy blue for hover effect */
+    color: #ffffff; /* White text on hover */
+    transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+/* Logout Button Styling */
+.logout-button {
+    background-color: hsl(0, 90%, 73%); /* Bright red for logout */
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600; /* Slightly bolder for emphasis */
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Rounded corners for modern look */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+}
+
+/* Hover Effect for Logout Button */
+.logout-button:hover {
+    background-color: #c53030; /* Darker red for hover effect */
+    transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Stack title and navigation on smaller screens */
+        gap: 15px;
+    }
+
+    .header-title {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+        text-align: center;
+    }
+
+    .header-nav {
+        justify-content: center; /* Center navigation buttons */
+    }
+}
+
+@media (max-width: 576px) {
+    .header-container {
+        flex-direction: column;
+    }
+    .header-nav {
+        flex-direction: column;
+        gap: 10px; /* Reduce gaps between buttons */
+    }
+}
+
